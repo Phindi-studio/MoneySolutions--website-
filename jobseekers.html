@@ -6,40 +6,41 @@
   <title>Money Solutions | Jobseekers</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="jobseekers.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav id="menu">
-    <div class="menu-container">
-      <div class="logo-area">
-        <img src="images/logo.png" alt="Money Solutions Logo" class="logo" />
-        <h1>Money Solutions</h1>
-      </div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="shop.html">Shop</a>
-        <a href="jobseekers.html" class="active">Jobseekers</a>
-      </div>
+  <!-- Sidebar -->
+  <aside class="sidebar" role="navigation">
+    <div class="logo-area">
+      <img src="images/logo.png" alt="Money Solutions Logo" class="logo" />
+      <h1>Money<br>Solutions</h1>
     </div>
-  </nav>
-
-  <!-- Header Section -->
-  <header class="jobseekers-header">
-    <h1>Jobseekers Support & Opportunities</h1>
-    <p>Browse the latest job listings, learnerships, and internships — updated regularly to help you take the next step.</p>
-  </header>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <nav class="sidebar-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="shop.html">Shop</a>
+      <a href="blog.html">Blog</a>
+      <a href="jobseekers.html" class="active">Jobseekers</a>
+    </nav>
+  </aside>
 
   <!-- Main Content -->
-  <main class="jobseekers-main">
+  <main>
+    <!-- Header Section -->
+    <section class="jobseekers-header">
+      <h1>Jobseekers Support & Opportunities 💼</h1>
+      <p>Browse the latest job listings, learnerships, and internships — updated regularly to help you take the next step.</p>
+    </section>
+
+    <!-- Job Listings Section -->
     <section class="jobs-listing">
       <h2>Latest Job Listings</h2>
 
-      <!-- Job Card Example -->
-      <!-- Uncomment and add more as needed -->
-      <!--
+      <!-- Sample Job Cards -->
+      <!-- Add/remove as needed -->
       <div class="job">
         <h3>Phlebotomy Technician Learnership</h3>
         <p><strong>Location:</strong> Johannesburg, South Africa</p>
@@ -55,16 +56,14 @@
         <p><strong>Description:</strong> Join a growing company to support customers and help improve their experience.</p>
         <a href="#" class="apply-button">View Details</a>
       </div>
-      -->
+
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="jobseekers-footer">
+  <footer class="footer">
     <p>&copy; 2025 Money Solutions. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
-
-
