@@ -13,7 +13,6 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
-
 /* Sidebar Styles */
 .sidebar {
   position: fixed;
@@ -23,17 +22,14 @@ body {
   width: 240px;
   background-color: #f8f8f8;
   padding: 20px;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   z-index: 1000;
 }
 
 .logo-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -44,10 +40,18 @@ body {
 
 .logo-area h1 {
   font-size: 18px;
-  text-align: center;
   color: #222;
+  line-height: 1.2;
 }
 
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 auto 20px;
+}
+
+/* Sidebar navigation links */
 .sidebar-links {
   display: flex;
   flex-direction: column;
@@ -68,6 +72,65 @@ body {
   background-color: #e91e63;
   color: #fff;
 }
+
+/* Content area spacing */
+main {
+  margin-left: 260px;
+  padding: 2rem;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 15px;
+    box-shadow: none;
+  }
+
+  .logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-area h1 {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .sidebar-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .sidebar-links.show {
+    display: flex;
+  }
+
+  main {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}
+
+.logo-area .logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.logo-area h1 {
+  font-size: 18px;
+  text-align: center;
+
 
 
 /* Headings */
