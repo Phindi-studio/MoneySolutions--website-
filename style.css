@@ -95,7 +95,7 @@ h1 {
 
 /* Mobile responsive design */
 @media (max-width: 768px) {
-   .nav {
+  #menu {
     flex-direction: column;
   }
 
