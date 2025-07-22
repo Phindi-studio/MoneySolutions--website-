@@ -6,63 +6,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Money Solutions | Contact</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav id="menu">
-    <div class="menu-container">
-      <div class="logo-area">
-        <img src="images/logo.png" alt="Money Solutions Logo" class="logo" />
-        <h1>Money Solutions</h1>
-      </div>
-    <div class="menu-container">
+  <!-- Sidebar -->
+  <aside class="sidebar" role="navigation">
+    <div class="logo-area">
+      <img src="images/logo.png" alt="Money Solutions Logo" class="logo" />
+      <h1>Money<br>Solutions</h1>
+    </div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <nav class="sidebar-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="contact.html" class="active">Contact</a>
       <a href="shop.html">Shop</a>
       <a href="blog.html">Blog</a>
       <a href="jobseekers.html">Jobseekers</a>
-    </div>
-   </div>
-  </nav>
+    </nav>
+  </aside>
 
-  <!-- Contact Section -->
-  <section class="container contact-section">
-    <h2>Contact Us 📞</h2>
-    <p>We’d love to hear from you! Please fill out the form below and we’ll be in touch.</p>
+  <!-- Main Content -->
+  <main>
+    <section class="contact-section">
+      <h2>Contact Us 📞</h2>
+      <p>We’d love to hear from you! Please fill out the form below and we’ll be in touch.</p>
 
-    <form action="https://formsubmit.co/moneysolutions342@gmail.com" method="POST" class="contact-form">
-      <!-- Redirect after submit -->
-      <input type="hidden" name="_next" value="https://phindi-studio.github.io/MoneySolutions--website-/index.html" />
-      <input type="hidden" name="_captcha" value="false" />
+      <form action="https://formsubmit.co/moneysolutions342@gmail.com" method="POST" class="contact-form">
+        <!-- Redirect after submit -->
+        <input type="hidden" name="_next" value="https://phindi-studio.github.io/MoneySolutions--website-/index.html" />
+        <input type="hidden" name="_captcha" value="false" />
 
-      <div class="form-group">
-        <label for="name">Name</label><br>
-        <input type="text" id="name" name="name" required />
+        <div class="form-group">
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+
+      <div class="form-credit">
+        <p>Powered by 
+          <a href="https://formsubmit.co" target="_blank" rel="noopener noreferrer">
+            <img src="https://formsubmit.co/logo.png" alt="FormSubmit Logo" width="100">
+          </a>
+        </p>
       </div>
+    </section>
+  </main>
 
-      <div class="form-group">
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email" required />
-      </div>
-
-      <div class="form-group">
-        <label for="message">Message</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea>
-      </div>
-
-      <button type="submit" class="submit-button">Send Message</button>
-    </form>
-
-    <div class="form-credit">
-      <p>Powered by 
-        <a href="https://formsubmit.co" target="_blank" rel="noopener noreferrer">
-          <img src="https://formsubmit.co/logo.png" alt="FormSubmit Logo" width="100">
-        </a>
-      </p>
-    </div>
-  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Money Solutions. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
