@@ -21,25 +21,30 @@
     <div class="container">
         <h2>Contact Us 📞</h2>
         <p>We’d love to hear from you! Please fill out the form below and we’ll be in touch.</p>
+        
+<form action="https://formsubmit.co/moneysolutions342@gmail.com" method="POST">
+  
 
-        <form action="https://formsubmit.co/moneysolutions342@gmail.com" method="POST">
-            
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="thank-you.html"> <!-- Optional: redirect after submit -->
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
 
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+  <button type="submit">Send</button>
+</form>
 
-            <button type="submit">Send Message</button>
-        </form>
+<p>
+  Powered by
+  <a href="https://formsubmit.co" target="_blank" rel="noopener noreferrer">
+    <img src="https://formsubmit.co/logo.png" alt="FormSubmit Logo" width="100">
+  </a>
+</p>
 
+        
     </div>
 
 </body>
